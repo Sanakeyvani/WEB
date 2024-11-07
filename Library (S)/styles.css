@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Calibri;
+}
+body{
+  background-color: rgb(174, 174, 174);
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.792);
+  color: rgb(220, 211, 211);
+}
+
+.positioned {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+nav {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.titles {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 768px;
+  cursor: pointer;
+}
+.titles > a:hover {
+  border: solid 1px;
+  border-radius: 3px;
+  padding: 9px;
+}
+.main {
+  display: grid;
+  grid-template-columns: auto 200px;
+  max-width: 1280px;
+  margin: 1rem auto;
+  gap: 1rem;
+
+  margin-top: 100px;
+}
+
+.filters {
+  width: 100%;
+  height: 420px;
+  border: 1px solid rgb(0, 0, 0);
+  position: sticky;
+  top: 100px;
+  padding: 0.5rem;
+  text-align: right;
+  border-radius: 6px;
+  background-color: rgb(174, 174, 174);
+}
+
+.main__container {
+  position: relative;
+  width: 100%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.filterItem {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.filterItem label {
+  width: 100%;
+  text-align: right;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  opacity: 0;
+  background-color: rgb(53, 51, 56);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.container:hover .overlay {
+  opacity: 0.9;
+}
+
+.title {
+  color: azure;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+}
+
+.writer {
+  color: azure;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+}
+
+.language {
+  color: azure;
+  font-size: 20px;
+  position: absolute;
+  top: 80%;
+}
+
+.pagination-container {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination-item {
+  padding: 4px;
+  background-color: rgb(214, 196, 243);
+  border-radius: 4px;
+  margin-top: 12px;
+  border-color: rgb(0, 0, 0);
+}
+
+.favContainer {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 1rem;
+}
+
+.favedBook {
+  display: flex;
+  width: 400px;
+  border: 1px solid black;
+  margin: 8px 0;
+}
+
+.favedBook img {
+  width: 80px;
+}
+#favs {
+  background-color: white;
+  color: black;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+}
+
+.hidden {
+  display: none !important;
+}
+.btn-fav {
+  margin-top: 120px;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 4px;
+  background-color: rgb(200, 168, 223);
+  color: rgb(0, 0, 0);
+  border: none;
+}
+.btn-fav:hover {
+  font-size: large;
+}
+.about {
+  box-shadow: 1rem;
+  width: 60%;
+  text-align: center;
+  padding: 30px;
+  margin: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: 100px;
+}
+.conect{
+  margin: 2rem;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 140px;
+  font-size: xx-large;
+  color: rgb(0, 0, 0);
+}
